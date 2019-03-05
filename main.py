@@ -28,7 +28,7 @@ list_members = mc.lists.members.all(mailchimp_list_id, get_all=True, fields='mem
 for id, data in members.items():
 	found = False
 	for list_member in list_members['members']:
-		if list_member['email_address'] == data['EmailAddress']:
+		if list_member['email_address'].lower() == data['EmailAddress'].lower():
 			found = True
 			break
 

@@ -1,6 +1,7 @@
 [mailchimp]
 api_key=
 api_user=
+list_id=
 
 [su]
 api_key=
